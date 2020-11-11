@@ -8,6 +8,6 @@ npm run dev
 yarn dev
 ```
 
-## Get to know me
+## ✌️ Get to know me
 
 Contact me on Instagram @bowdsterr
