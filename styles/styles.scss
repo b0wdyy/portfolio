@@ -1,5 +1,6 @@
-@import "./variables";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;1,500&display=swap");
+@import "./variables";
+@import "./buttons/buttons";
 
 *,
 *::before,
@@ -18,4 +19,6 @@ a {
   color: $black;
 }
 
-@import "./nav";
+@import "./components/nav";
+@import "./components/main";
+@import "./components/services";

@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
 
-  padding: 32px 32px;
+  padding: 32px;
 
   & > div {
     font-weight: 700;
@@ -23,7 +23,7 @@
       transition: 0.4s ease;
 
       &:not(:last-of-type) {
-        margin-right: 40px;
+        margin-right: 120px;
       }
 
       @for $i from 1 through 3 {
