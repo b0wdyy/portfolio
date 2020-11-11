@@ -1,0 +1,64 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 32px 32px;
+
+  & > div {
+    font-weight: 700;
+
+    font-size: 24px;
+  }
+
+  ul {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+
+    li {
+      position: relative;
+
+      transition: 0.4s ease;
+
+      &:not(:last-of-type) {
+        margin-right: 40px;
+      }
+
+      @for $i from 1 through 3 {
+        &:nth-child(#{$i}) {
+          &::before {
+            content: "0" + $i;
+
+            position: absolute;
+            top: -70%;
+            left: 0;
+
+            font-size: 12px;
+          }
+        }
+      }
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+        width: 0;
+        height: 1px;
+
+        background: $black;
+
+        transition: 0.4s ease;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}

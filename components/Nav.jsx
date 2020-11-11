@@ -1,8 +1,13 @@
 import Link from "next/link";
 
 const Layout = () => {
+  const intro = "< Bowdy />";
+
   return (
     <nav className="main-nav">
+      <div>
+        <Link href="/">{intro}</Link>
+      </div>
       <ul>
         <li>
           <Link href="/">Home</Link>
