@@ -4,7 +4,7 @@ import Link from "next/link";
 const Main = () => {
   return (
     <main className="main-content">
-      <img src={me} alt={me} />
+      <img src={me} alt="Memoji of Bodhi Vandael" />
 
       <h2>Welcome stranger, I'm Bodhi! 👋</h2>
 

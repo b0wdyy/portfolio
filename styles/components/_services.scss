@@ -1,5 +1,6 @@
 .services {
   margin-top: $base-padding * 3.1;
+  margin-bottom: $base-padding * 3.1;
   padding: $base-padding * 1.5 $base-padding;
 
   display: flex;
@@ -48,7 +49,7 @@
   h2 {
     margin-bottom: 40px;
 
-    font-size: 36px;
+    font-size: 44px;
   }
 
   &__box {

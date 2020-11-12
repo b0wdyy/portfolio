@@ -14,11 +14,41 @@
   line-height: 1.4;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   color: $black;
 }
 
+.arrow-up {
+  border: 1px solid $black;
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: 60px;
+  right: 120px;
+
+  padding: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 999;
+
+  transition: 0.8s ease;
+
+  cursor: pointer;
+
+  img {
+    transform: rotate(-90deg);
+  }
+}
+
 @import "./components/nav";
 @import "./components/main";
 @import "./components/services";
+@import "./components/resume";
