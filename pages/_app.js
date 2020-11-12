@@ -2,17 +2,18 @@ import Nav from "../components/Nav";
 import Head from "next/head";
 import Image from "next/image";
 import "../styles/styles.scss";
-import { useEffect, useRef } from "react";
+import { useEffect, useState } from "react";
+import { CSSTransition } from "react-transition-group";
 
 function MyApp({ Component, pageProps }) {
-  const arrowRef = useRef(null);
+  const [arrowShown, setArrowShown] = useState(false);
 
   useEffect(() => {
     document.addEventListener("scroll", () => {
       if (document.documentElement.scrollTop > 150) {
-        arrowRef.current.style.opacity = "1";
+        setArrowShown(true);
       } else {
-        arrowRef.current.style.opacity = "0";
+        setArrowShown(false);
       }
     });
   }, []);
@@ -34,9 +35,11 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/images/laptop.png" />
       </Head>
       <div>
-        <div className="arrow-up" ref={arrowRef} onClick={scrollTop}>
-          <Image src="/svg/next.svg" width={25} height={25} />
-        </div>
+        <CSSTransition in={arrowShown} timeout={400} classNames="fade">
+          <div className="arrow-up" onClick={scrollTop}>
+            <Image src="/svg/next.svg" width={25} height={25} />
+          </div>
+        </CSSTransition>
         <Nav />
         <Component {...pageProps} />
       </div>

@@ -48,6 +48,29 @@ a {
   }
 }
 
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 400ms ease;
+}
+
+.fade-enter-done,
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 400ms ease;
+}
+
+.fade-exit-done {
+  opacity: 0;
+}
+
 @import "./components/nav";
 @import "./components/main";
 @import "./components/services";
