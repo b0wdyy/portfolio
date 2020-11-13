@@ -1,10 +1,10 @@
 import Nav from "../components/Nav";
 import Head from "next/head";
 import Image from "next/image";
-import "../styles/styles.scss";
 import { useEffect, useState } from "react";
 import { CSSTransition } from "react-transition-group";
 
+import "../styles/styles.scss";
 function MyApp({ Component, pageProps }) {
   const [arrowShown, setArrowShown] = useState(false);
 

@@ -1,5 +1,11 @@
+const { default: MianContact } = require("../components/Contact/MianContact");
+
 const contact = () => {
-  return <div>Contact works!</div>;
+  return (
+    <div>
+      <MianContact />
+    </div>
+  );
 };
 
 export default contact;
