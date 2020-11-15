@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { CSSTransition } from "react-transition-group";
 
 import "../styles/styles.scss";
+
 function MyApp({ Component, pageProps }) {
   const [arrowShown, setArrowShown] = useState(false);
 
@@ -29,11 +30,12 @@ function MyApp({ Component, pageProps }) {
         <meta name="robots" content="noindex, nofollow" />
         <meta
           name="keywords"
-          content="portfolio, site, webdeveloper, developer, Bodhi, Vandael, Bodhi Vandael, software engineer, software, front-end"
+          content="portfolio, site, webdeveloper, developer, Bodhi, Vandael, Bodhi Vandael, software engineer, software, front-end, freelancer"
         />
         <title>Portfolio | Bowdy</title>
         <link rel="icon" href="/images/laptop.png" />
       </Head>
+
       <div>
         <CSSTransition in={arrowShown} timeout={400} classNames="fade">
           <div className="arrow-up" onClick={scrollTop}>

@@ -1,0 +1,60 @@
+.intro {
+  height: 100vh;
+  width: 100vw;
+  background: $black;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  position: absolute;
+  top: 0;
+
+  z-index: 999;
+
+  h1 {
+    color: $white;
+
+    font-size: 80px;
+    text-transform: uppercase;
+
+    position: relative;
+
+    overflow: hidden;
+
+    .intro-text {
+      transform: translateY(-100%);
+    }
+
+    .intro-bar {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+
+      background: $black;
+    }
+  }
+
+  & > div {
+    color: $white;
+
+    overflow: hidden;
+
+    p {
+      transform: translateY(100%);
+    }
+
+    .right-to-left {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+
+      background: $black;
+    }
+  }
+}

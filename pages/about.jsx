@@ -4,11 +4,11 @@ const { default: Quotes } = require("../components/About/Quotes");
 
 const about = () => {
   return (
-    <>
+    <div className="about-circles">
       <MainAbout />
       <Quotes />
       <Projects />
-    </>
+    </div>
   );
 };
 

@@ -1,0 +1,78 @@
+.contact-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__form {
+  padding: 48px 120px;
+  text-align: center;
+
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.055);
+
+  & > p {
+    margin: $base-padding 0;
+  }
+
+  label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  input {
+    border: none;
+    border-bottom: 1px solid rgb(209, 209, 209);
+
+    padding: 4px 0;
+
+    background: transparent;
+
+    font-size: 13px;
+
+    width: 240px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__name,
+  &__email {
+    position: relative;
+  }
+
+  &__name {
+    margin-bottom: 32px;
+  }
+
+  &__error {
+    color: red;
+
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  button {
+    margin-top: 32px;
+    padding: 12px 24px;
+    background: $black;
+
+    border: none;
+    border-radius: 24px;
+
+    text-transform: uppercase;
+    font-size: 14px;
+
+    color: $white;
+
+    cursor: pointer;
+
+    transition: 0.4s ease;
+
+    &.error {
+      background: $error;
+    }
+  }
+}

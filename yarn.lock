@@ -1594,6 +1594,13 @@ aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.11.0.tgz#d61f46d83b2519250e2784daf5b09479a8b41c59"
   integrity sha512-xh1Rl34h6Fi1DC2WWKfxUTVqRsNnr6LsKz2+hfwDxQJWmrx8+c7ylaqBMcHfl1U1r2dsifOvKX3LQuLNZ+XSvA==
 
+axios@^0.21.0:
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.0.tgz#26df088803a2350dff2c27f96fef99fe49442aca"
+  integrity sha512-fmkJBknJKoZwem3/IKSSLpkdNXZeBu5Q7GA/aRsr2btgrptmSCxi2oFjZHqGdK9DoTil9PIHlPIZw2EcRJXRvw==
+  dependencies:
+    follow-redirects "^1.10.0"
+
 babel-plugin-dynamic-import-node@^2.3.3:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/babel-plugin-dynamic-import-node/-/babel-plugin-dynamic-import-node-2.3.3.tgz#84fda19c976ec5c6defef57f9427b3def66e17a3"
@@ -2828,6 +2835,11 @@ dot-prop@^5.2.0:
   dependencies:
     is-obj "^2.0.0"
 
+dotenv@^8.2.0:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
+  integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
+
 duplexify@^3.4.2, duplexify@^3.6.0:
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/duplexify/-/duplexify-3.7.1.tgz#2a4df5317f6ccfd91f86d6fd25d8d8a103b88309"
@@ -3220,6 +3232,11 @@ fn-name@~3.0.0:
   resolved "https://registry.yarnpkg.com/fn-name/-/fn-name-3.0.0.tgz#0596707f635929634d791f452309ab41558e3c5c"
   integrity sha512-eNMNr5exLoavuAMhIUVsOKF79SWd/zG104ef6sxBTSw+cZc6BXdQXDvYcGvp0VbxVVSp1XDUNoz7mg1xMtSznA==
 
+follow-redirects@^1.10.0:
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.0.tgz#b42e8d93a2a7eea5ed88633676d6597bc8e384db"
+  integrity sha512-aq6gF1BEKje4a9i9+5jimNFIpq4Q1WiwBToeRK5NvZBd/TRsmW8BsJfOEGkr76TbOyPVD3OVDN910EcUNtRYEA==
+
 for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
@@ -3429,6 +3446,11 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2:
   version "4.2.4"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.4.tgz#2256bde14d3632958c465ebc96dc467ca07a29fb"
   integrity sha512-WjKPNJF79dtJAVniUlGGWHYGz2jWxT6VhN/4m1NdkbZ2nOsEF+cI1Edgql5zCRhs/VsQYRvrXctxktVXZUkixw==
+
+gsap@^3.5.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.5.1.tgz#36cf76787d1758e749469d5e9cbe365c186544c4"
+  integrity sha512-EMV0RSUKZNeTUzLKAizGlwxVOUyif3/g8I3S1aA/hf3gbqwBvmQ02x1RdTBQNQMOpHCVBv9y/vaHwfctoAg8zw==
 
 har-schema@^2.0.0:
   version "2.0.0"
@@ -4792,6 +4814,11 @@ node-sass@^4.13.1:
     sass-graph "2.2.5"
     stdout-stream "^1.4.0"
     "true-case-path" "^1.0.2"
+
+nodemailer@^6.4.16:
+  version "6.4.16"
+  resolved "https://registry.yarnpkg.com/nodemailer/-/nodemailer-6.4.16.tgz#5cb6391b1d79ab7eff32d6f9f48366b5a7117293"
+  integrity sha512-68K0LgZ6hmZ7PVmwL78gzNdjpj5viqBdFqKrTtr9bZbJYj6BRj5W6WGkxXrEnUl3Co3CBXi3CZBUlpV/foGnOQ==
 
 noop-logger@^0.1.1:
   version "0.1.1"

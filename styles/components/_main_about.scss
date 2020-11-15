@@ -1,7 +1,4 @@
-.about {
-  padding: 40px 120px;
-  position: relative;
-
+.about-circles {
   &::before,
   &::after {
     content: "";
@@ -14,7 +11,7 @@
     width: 500px;
     height: 500px;
 
-    top: 40%;
+    top: 80%;
     right: -10%;
 
     border-radius: 50%;
@@ -25,12 +22,17 @@
     width: 400px;
     height: 400px;
 
-    top: 24%;
+    top: 54%;
     right: 4%;
 
     border-radius: 50%;
     border: 1px solid rgba(0, 110, 255, 0.192);
   }
+}
+
+.about {
+  padding: 40px 120px;
+  position: relative;
 
   & > div {
     display: grid;

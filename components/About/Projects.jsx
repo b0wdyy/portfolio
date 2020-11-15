@@ -7,7 +7,7 @@ const Projects = () => {
 
       <div>
         <div className="projects__item">
-          <h3>Webapp that is a clone of a movie theatre site.</h3>
+          <h3>Webapp that is a clone of a movie theatre site. 🍿</h3>
 
           <p>
             You can choose a movie that you want to see. It then goes to a
@@ -19,7 +19,7 @@ const Projects = () => {
         </div>
 
         <div className="projects__item">
-          <h3>NodeJS job scraper</h3>
+          <h3>NodeJS job scraper 🕷</h3>
 
           <p>
             A friend and I built a nodeJS job scraper going through all the
@@ -31,7 +31,7 @@ const Projects = () => {
         </div>
 
         <div className="projects__item">
-          <h3>Fitbonding personal training site</h3>
+          <h3>Fitbonding personal training site 🏋🏼</h3>
 
           <p>
             For a small business in my hometown. Together with a friend we made
@@ -54,7 +54,7 @@ const Projects = () => {
         </div>
 
         <div className="projects__item">
-          <h3>Datascience project</h3>
+          <h3>Datascience project 📊</h3>
 
           <p>
             Datascience project that reads a csv file and does calculations

@@ -18,6 +18,7 @@ html {
   scroll-behavior: smooth;
 
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 a {
@@ -73,6 +74,8 @@ a {
 .fade-exit-done {
   opacity: 0;
 }
+@import "./intro";
+@import "./components/loader";
 
 @import "./components/nav";
 @import "./components/main";
@@ -80,3 +83,6 @@ a {
 @import "./components/resume";
 
 @import "./components/main_about";
+
+@import "./components/main_contact";
+@import "./components/form";
