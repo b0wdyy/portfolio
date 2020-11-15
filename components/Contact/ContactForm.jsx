@@ -1,19 +1,10 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
-import * as Yup from "yup";
 import Axios from "axios";
 
 import Loader from "../../components/Loader";
-
-const SignUpSchema = Yup.object().shape({
-  name: Yup.string()
-    .min(2, "That's a short name?")
-    .max(40, "Goddaaaaaamn, that's long!")
-    .required("Please fill it in, I would like to know who you are 😊"),
-  email: Yup.string()
-    .email("Invalid email...")
-    .required("Please fill this in."),
-});
+import { SignUpSchema } from "../../utils/utils";
+import Image from "next/image";
 
 const ContactForm = () => {
   const BASE_URL = "/api/form";
@@ -22,6 +13,10 @@ const ContactForm = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
   const [button, setButton] = useState("Submit ☕️");
+  const [open, setOpen] = useState(false);
+
+  const linkedin = useRef();
+  const instagram = useRef();
 
   const sendEmail = async (values) => {
     setLoading(true);
@@ -45,6 +40,18 @@ const ContactForm = () => {
           }, 4000);
         });
     }
+  };
+
+  const menuOpen = () => {
+    if (!open) {
+      linkedin.current.classList.add("open");
+      instagram.current.classList.add("open");
+    } else {
+      linkedin.current.classList.remove("open");
+      instagram.current.classList.remove("open");
+    }
+
+    setOpen(!open);
   };
 
   return (
@@ -83,6 +90,37 @@ const ContactForm = () => {
           <button type="submit" className={error ? "error" : ""}>
             {loading ? <Loader /> : button}
           </button>
+
+          <div className="social-wrapper">
+            <div onClick={menuOpen}>
+              <Image
+                src="/svg/profile.svg"
+                width={30}
+                height={30}
+                unoptimized={true}
+              />
+            </div>
+            <div ref={linkedin}>
+              <a href="https://www.linkedin.com/in/bodhi-vandael/">
+                <Image
+                  src="/svg/linkedin.svg"
+                  width={30}
+                  height={30}
+                  unoptimized={true}
+                />
+              </a>
+            </div>
+            <div ref={instagram}>
+              <a href="https://www.instagram.com/bowdsterr/">
+                <Image
+                  src="/svg/instagram.svg"
+                  width={30}
+                  height={30}
+                  unoptimized={true}
+                />
+              </a>
+            </div>
+          </div>
         </Form>
       </div>
     </Formik>

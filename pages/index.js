@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { getLocalStorage, setLocalStorage } from "../utils/utils";
 import gsap from "gsap";
 
 import Main from "../components/Home/Main";
@@ -14,13 +15,13 @@ export default function Home() {
       .to(".intro > div .right-to-left", {
         width: "100%",
         duration: 1,
-        delay: 0.2,
+        delay: 0.1,
       })
       .to(".intro", {
         height: 0,
         delay: 0.2,
       })
-      .to("html", { overflowY: "visible" });
+      .from("html", { overflowY: "hidden" });
   }, []);
 
   return (
@@ -36,6 +37,7 @@ export default function Home() {
           <div className="right-to-left"></div>
         </div>
       </div>
+
       <Main />
       <Services />
       <Resume />

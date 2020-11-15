@@ -18,7 +18,6 @@ html {
   scroll-behavior: smooth;
 
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 a {
@@ -73,6 +72,11 @@ a {
 
 .fade-exit-done {
   opacity: 0;
+}
+
+.arrow-up.fade-exit-done {
+  cursor: initial;
+  pointer-events: none;
 }
 @import "./intro";
 @import "./components/loader";
