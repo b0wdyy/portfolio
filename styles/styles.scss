@@ -31,7 +31,7 @@ a {
 
   position: fixed;
   bottom: 60px;
-  right: 120px;
+  right: 60px;
 
   padding: 16px;
 
@@ -90,3 +90,7 @@ a {
 
 @import "./components/main_contact";
 @import "./components/form";
+
+// MEDIA QUERIES
+
+@import "./media_queries/main";

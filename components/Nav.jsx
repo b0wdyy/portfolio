@@ -19,6 +19,12 @@ const Layout = () => {
           <Link href="/contact">Contact</Link>
         </li>
       </ul>
+
+      <div className="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </nav>
   );
 };

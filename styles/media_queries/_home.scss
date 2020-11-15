@@ -1,0 +1,166 @@
+@media (max-width: 1000px) {
+  .intro {
+    h1 {
+      font-size: 64px;
+    }
+  }
+
+  main.main-content {
+    h1 {
+      width: 80%;
+    }
+
+    img {
+      width: 20%;
+    }
+  }
+
+  .services {
+    margin-left: 100px;
+    margin-right: 100px;
+
+    &__box {
+      flex-direction: column;
+
+      &__item {
+        width: 55%;
+
+        &--first {
+          margin-left: -300px;
+        }
+
+        &--second {
+          margin-right: -300px;
+        }
+      }
+    }
+  }
+
+  .resume {
+    .circle {
+      &.first {
+        right: -10%;
+      }
+      &.second {
+        right: -18%;
+      }
+      &.third {
+        right: -25%;
+      }
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  .services {
+    background: $white;
+
+    &::before {
+      left: -30px;
+    }
+
+    &::after {
+      bottom: 30%;
+      right: -30%;
+
+      height: 200px;
+      width: 200px;
+    }
+    &__box__item {
+      width: 100%;
+
+      margin-bottom: 24px;
+      border-bottom: 1px solid black;
+
+      background: transparent;
+
+      &--first {
+        margin-left: 0;
+      }
+      &--second {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .resume {
+    &__row {
+      .resume__items__item:nth-child(2) {
+        justify-self: flex-end;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  main.main-content {
+    img {
+      width: 40%;
+    }
+
+    .main-content__par {
+      width: 80%;
+    }
+  }
+
+  .services {
+    margin-left: 0;
+    margin-right: 0;
+
+    padding: 48px 64px;
+  }
+
+  .resume {
+    padding: 48px 64px;
+
+    &__row {
+      grid-template-columns: 1fr;
+
+      .resume__items__item:nth-child(2) {
+        justify-self: flex-start;
+
+        margin-top: $base-padding - 8px;
+      }
+    }
+  }
+}
+
+// TODO: UITZOEKEN WAAROM HET EEN RARE BREEDTE HEEFT
+@media (max-width: 420px) {
+  .intro {
+    h1 {
+      font-size: 28px;
+    }
+  }
+  main.main-content {
+    margin-top: 20px;
+    img {
+      width: 60%;
+    }
+
+    h1 {
+      font-size: 28px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+    .main-content__par {
+      font-size: 16px;
+    }
+  }
+
+  .services {
+    padding: 32px 40px;
+    &__box {
+      &__item {
+        padding: 28px 0;
+      }
+    }
+  }
+
+  .resume {
+    padding: 32px 40px;
+  }
+}

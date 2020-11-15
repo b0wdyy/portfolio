@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="intro">
+      <section className="intro">
         <h1>
           <div className="intro-text">Welcome to my site</div>
           <div className="intro-bar"></div>
@@ -36,7 +36,7 @@ export default function Home() {
           <p>Hope you enjoy</p>
           <div className="right-to-left"></div>
         </div>
-      </div>
+      </section>
 
       <Main />
       <Services />
