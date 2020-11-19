@@ -7,7 +7,7 @@
 
   main.main-content {
     h1 {
-      width: 80%;
+      width: 88%;
     }
 
     img {
@@ -39,29 +39,32 @@
   .resume {
     .circle {
       &.first {
-        right: -10%;
+        right: 0;
       }
       &.second {
-        right: -18%;
+        right: 0;
       }
       &.third {
-        right: -25%;
+        right: 0;
       }
     }
   }
 }
 
 @media (max-width: 830px) {
+  main.main-content {
+    margin-top: 100px;
+  }
   .services {
     background: $white;
 
     &::before {
-      left: -30px;
+      left: 0;
     }
 
     &::after {
       bottom: 30%;
-      right: -30%;
+      right: 0;
 
       height: 200px;
       width: 200px;
@@ -108,6 +111,14 @@
     margin-right: 0;
 
     padding: 48px 64px;
+
+    &::after {
+      right: 100px;
+      bottom: 24%;
+
+      width: 100px;
+      height: 100px;
+    }
   }
 
   .resume {
@@ -122,10 +133,13 @@
         margin-top: $base-padding - 8px;
       }
     }
+
+    .circle {
+      display: none;
+    }
   }
 }
 
-// TODO: UITZOEKEN WAAROM HET EEN RARE BREEDTE HEEFT
 @media (max-width: 420px) {
   .intro {
     h1 {
@@ -133,7 +147,7 @@
     }
   }
   main.main-content {
-    margin-top: 20px;
+
     img {
       width: 60%;
     }
@@ -162,5 +176,13 @@
 
   .resume {
     padding: 32px 40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .intro {
+    h1 {
+      font-size: 24px;
+    }
   }
 }

@@ -5,6 +5,8 @@
 
     display: block;
     position: absolute;
+
+    z-index: -1;
   }
 
   &::before {

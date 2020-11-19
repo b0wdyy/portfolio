@@ -17,6 +17,10 @@ function MyApp({ Component, pageProps }) {
         setArrowShown(false);
       }
     });
+
+    return () => {
+      document.removeEventListener("scroll");
+    }
   }, []);
 
   const scrollTop = () => {

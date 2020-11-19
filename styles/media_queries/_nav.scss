@@ -1,19 +1,32 @@
 @media (max-width: 830px) {
   .main-nav {
-    ul {
+    padding: 16px 40px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    box-shadow: 0px 4px 6px -3px rgba(0,0,0,0.49);
+
+    background: $white;
+
+    z-index: 999;
+
+    .hamburger {
+      display: block;
+    }
+
+    .mobile-nav {
+      display: flex;
+
+      &__backdrop {
+        display: block;
+      }
+    }
+
+    & > ul {
       display: none;
     }
-  }
-}
-
-@media (max-width: 550px) {
-  .main-nav {
-    padding: 32px 64px;
-  }
-}
-
-@media (max-width: 420px) {
-  .main-nav {
-    padding: 32px 40px;
   }
 }

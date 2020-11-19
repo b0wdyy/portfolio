@@ -1,0 +1,59 @@
+@media (max-width: 830px) {
+  main.contact {
+    margin-top: 80px;
+
+    padding: 40px;
+
+    & > p {
+      width: 60%;
+    }
+  }
+
+  .contact-flex {
+    margin: 0 40px;
+    padding-bottom: 52px;
+  }
+}
+
+@media (max-width: 420px) {
+  main.contact {
+    h1 {
+      font-size: 32px;
+    }
+  }
+  .contact-flex {
+    margin: 0 20px;
+    .contact__form {
+      padding: 40px;
+
+      .social-wrapper {
+        & > div {
+          right: -13px;
+          width: 26px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  main.contact {
+
+    & > p {
+      width: 90%;
+    }
+  }
+
+  .contact-flex {
+
+    .contact__form {
+
+      padding: 24px;
+
+      .social-wrapper {
+        display: none;
+      }
+    }
+
+  }
+}

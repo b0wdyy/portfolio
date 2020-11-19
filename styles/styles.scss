@@ -2,6 +2,10 @@
 @import "./variables";
 @import "./buttons/buttons";
 
+:root {
+  --nav-height: 0;
+}
+
 *,
 *::before,
 *::after {
@@ -48,6 +52,11 @@ a {
 
   img {
     transform: rotate(-90deg);
+  }
+
+
+  @media (max-width: 830px) {
+    display: none;
   }
 }
 

@@ -46,7 +46,6 @@ const Resume = () => {
 
             <ul>
               <li>Designing</li>
-              <li>UI/UX Design</li>
               <li>Product Design</li>
               <li>Wireframing</li>
             </ul>
@@ -58,6 +57,7 @@ const Resume = () => {
               <li>NodeJS</li>
               <li>Vue, Nuxt</li>
               <li>React, NextJS</li>
+              <li>Laravel</li>
               <li>Angular</li>
               <li>Python</li>
               <li>React Native</li>
